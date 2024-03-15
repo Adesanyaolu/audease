@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* For custom fonts, use @font-face with direct links to font files */
+@font-face {
+    font-family: 'Switzer';
+    src: url('path/to/switzer-font.woff2') format('woff2'),
+         url('path/to/switzer-font.woff') format('woff');
+}
+
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.placeholder-text-textBlack::placeholder {
+  color: inherit;
+}
+

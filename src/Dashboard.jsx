@@ -9,12 +9,12 @@ import { Link } from "react-router-dom";
 function Dashboard() {
 
     return (
-        <div className="dashboard  flex flex-row justify-center  m-auto  container max-w-[100rem]">
+        <div className="dashboard  flex flex-row justify-center m-auto max-w-[1440px]">
             {/* Left side  */}
-            <div className="left w-[20%] mx-2 border-r-2 border-r-borderColor container">
+            <div className="left w-[17%] border-r-2 border-r-borderColor container">
                 {/* section one  */}
-                <div className="flex flex-row py-6 px-4 justify-around">
-                    <div className="w-14">
+                <div className="flex flex-row py-8 px-4 justify-around">
+                    <div className="w-16">
                         <img src="/audease_logo.png" alt="audease logo" />
                     </div>
                     <div>
@@ -34,7 +34,7 @@ function Dashboard() {
                             <img src="/home.png" alt="" />
                         </div>
                         <div>
-                            <h3 className="pl-4 font-semibold text-base">Home</h3>
+                            <h3 className="pl-4 pt-2 font-semibold text-base">Home</h3>
                         </div>
                     </div>
                     {/* Messages  */}
@@ -43,7 +43,7 @@ function Dashboard() {
                             <img src="/message.png" alt="" />
                         </div>
                         <div>
-                            <h3 className="pl-4 font-semibold text-iconColor">Messages</h3>
+                            <h3 className="pl-4 pt-2 font-semibold text-iconColor">Messages</h3>
                         </div>
                     </div>
                     {/* Tasks  */}
@@ -52,7 +52,7 @@ function Dashboard() {
                             <img src="/task.png" alt="" />
                         </div>
                         <div>
-                            <h3 className="pl-4 font-semibold text-iconColor">Tasks</h3>
+                            <h3 className="pl-4 pt-2 font-semibold text-iconColor">Tasks</h3>
                         </div>
                     </div>
                     {/* Staff  */}
@@ -61,7 +61,7 @@ function Dashboard() {
                             <img src="/profile-user.png" alt="" />
                         </div>
                         <div>
-                            <h3 className="pl-4 font-semibold text-iconColor">Staffs</h3>
+                            <h3 className="pl-4 pt-2 font-semibold text-iconColor">Staffs</h3>
                         </div>
                     </div>
                     {/* Settings  */}
@@ -70,14 +70,14 @@ function Dashboard() {
                             <img src="/setting.png" alt="" />
                         </div>
                         <div>
-                            <h3 className="pl-4 font-semibold text-iconColor">Settings</h3>
+                            <h3 className="pl-4 pt-2 font-semibold text-iconColor">Settings</h3>
                         </div>
                     </div>
                     {/* line break  */}
                     <hr className="text-borderColor h-2 mr-2" />
                 </div>
                 {/* Section three  */}
-                <div className="p-4">
+                <div className="py-2 px-10">
                     <div className="flex flex-row justify-between">
                         <div>
                             <h3 className="text-iconColor font-bold text-tem">STAGES</h3>
@@ -106,15 +106,14 @@ function Dashboard() {
                     </div>
                 </div>
                 {/* section four  */}
-                <div className="p-2">
-                    <div className="relative flex flex-row bg-[url('/Union.svg')] bg-no-repeat h-[250px] w-full">
-                        <div className="text-center w-[200px] mt-16">
+                <div className="px-10">
+                    <div className="relative flex flex-row leftCard mr-6">
+                        <div className="text-center w-[16rem] mt-[7rem]">
                             <h3 className="text-breaksm font-medium">Thoughts Time</h3>
                             <p className="text-tem font-normal text-iconColor p-4">We don’t have any notice for you, till then you can share your thoughts with your peers.</p>
                             <input type="text" className="bg-white w-4/5 rounded p-2 text-center text-breaksm font-medium text-textBlack placeholder-text-textBlack" placeholder="Write a message" />
                         </div>
-                        <div className="absolute flex items-center justify-center h-16 w-16 left-[70px]  flex-row">
-                            {/* <img src="/lamp-on.png" alt="Image" className="w-1/2 h-1/2" /> */}
+                        <div className="absolute flex items-center justify-center h-16 w-16 left-[5.5rem] top-5  flex-row">
                             <div>
                                 <img src="/ellipse.png" alt="Background Image" className="absolute inset-0 w-full h-full object-cover" />
                                 <img src="/lamp-on.png" alt="Foreground Image" className="absolute inset-0 left-[15px] top-[20px] object-cover w-1/2 h-1/2" />
@@ -127,12 +126,12 @@ function Dashboard() {
             </div>
 
             {/* Right side  */}
-            <div className="right w-[80%] ">
+            <div className="right w-[65%] ">
                 {/* First section  */}
                 <div className="flex flex-row justify-between mx-12 my-4">
                     {/* Search bar */}
                     <div className='relative'>
-                        <input type="text" placeholder="Search for anything..." className="pl-10 pr-4 py-2 border-none rounded-lg w-80 focus:outline-none focus:border-blue-500 bg-cardbg" />
+                        <input type="text" placeholder="Search for anything..." className="pl-10 pr-4 py-4 border-none rounded-lg w-80 focus:outline-none focus:border-blue-500 bg-cardbg" />
                         <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                             <img src="/search.png" alt="Search Icon" className="w-5 h-5" />
                         </span>
@@ -182,7 +181,7 @@ function Dashboard() {
                             <h4 className='font-medium text-bigTexta text-textBlue'>Overview</h4>
                         </div>
                         {/* icons  */}
-                        <div className='flex flex-row space-x-4 py-4'>
+                        <div className='flex flex-row space-x-4 py-2'>
                             <img src="/icon-pen.png" alt="" />
                             <img src="/icon626.png" alt="" />
                         </div>
@@ -243,19 +242,19 @@ function Dashboard() {
                         <div className='border-r-2 border-iconColor h-3/5 my-2'>
 
                         </div>
-                        <div className='py-1'>
-                            <img src="/yellowIcon.png" alt="" />
-                        </div>
+
+                        <img src="/yellowIcon.png" alt="" className='w-[2rem] h-[2rem] my-2' />
+
                         <div className='py-2'>
-                            <img src="/home.png" alt="" />
+                            <img src="/home.png" alt="" className='w-3/4' />
                         </div>
                     </div>
                 </div>
 
                 {/* Fourth section - cards  */}
-                <div className='flex flex-row  my-12 mx-auto justify-center space-x-4 w-full'>
+                <div className='flex flex-row  my-12 mx-10 justify-center gap-12 '>
                     {/* Big Card 1  */}
-                    <div className='bg-cardbg w-[30%] rounded-2xl p-4'>
+                    <div className='bg-cardbg w-[25rem] rounded-2xl p-4'>
                         {/* to do  */}
                         <div className='flex flex-row space-x-4'>
                             <li className="py-2 mb-2 flex items-center font-medium text-iconText">
@@ -385,7 +384,7 @@ function Dashboard() {
                         </div>
                     </div>
                     {/* Big Card 2  */}
-                    <div className='bg-cardbg w-[30%] rounded-2xl p-4'>
+                    <div className='bg-cardbg w-[25rem] rounded-2xl p-4'>
                         {/* to do  */}
                         <div className='flex flex-row space-x-4'>
                             <li className="py-2 mb-2 flex items-center font-medium text-iconText">
@@ -461,7 +460,7 @@ function Dashboard() {
                                     <div>
                                         <Avatar.Group className='gap-2'>
                                             <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
-                                            
+
                                         </Avatar.Group>
                                     </div>
                                     <div className='flex flex-row space-x-2 py-2'>
@@ -479,7 +478,7 @@ function Dashboard() {
                         </div>
                     </div>
                     {/* Big card 3  */}
-                    <div className='bg-cardbg w-[30%] rounded-2xl p-4'>
+                    <div className='bg-cardbg w-[25rem] rounded-2xl p-4'>
                         {/* to do  */}
                         <div className='flex flex-row space-x-4'>
                             <li className="py-2 mb-2 flex items-center font-medium text-iconText">
@@ -515,7 +514,7 @@ function Dashboard() {
                                         <Avatar.Group className='gap-2'>
                                             <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
                                             <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
-                                           
+
                                         </Avatar.Group>
                                     </div>
                                     <div className='flex flex-row space-x-2 py-2'>
@@ -554,7 +553,7 @@ function Dashboard() {
                                             <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
                                             <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
                                             <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
-                                           
+
                                         </Avatar.Group>
                                     </div>
                                     <div className='flex flex-row space-x-2 py-2'>

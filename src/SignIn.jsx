@@ -5,8 +5,8 @@ function SignIn() {
 
   return (
 
-    <div className="font-switzer  bg-bg-pink rounded-xl m-4">
-      <div className='flex flex-col items-center lg:flex lg:flex-row lg:items-center lg:justify-center lg:space-x-10'>
+    <div className="font-switzer bg-bg-pink rounded-xl m-8 h-full lg:h-screen lg:w-full lg:m-auto lg:items-center lg:flex lg:justify-center">
+      <div className='flex flex-col items-center lg:flex lg:flex-row lg:items-center lg:justify-center lg:space-x-10 p-8'>
         <div className='lg:max-h-80 lg:max-w-64 lg:m-10'>
           {/* audease logo */}
           <div className="flex flex-row justify-center pt-4 md:py-8">
@@ -21,7 +21,7 @@ function SignIn() {
         </div>
 
         {/* Form  */}
-        <div className="bg-bg-white rounded-lg mb-2 my-2 mx-4 p-4 md:max-w-72 lg:max-w-72	lg:m-10 xl:max-w-sm">
+        <div className="bg-bg-white rounded-lg mb-2 my-2 mx-10 p-4  md:max-w-72 lg:max-w-72	lg:m-10 xl:max-w-sm lg:px-10">
           <div>
             <h1 className="text-base font-semibold">Sign in</h1>
             <p className="text-tdm font-normal pt-2 ">Don’t have an account? <span className="font-semibold">Sign Up</span></p>
@@ -48,7 +48,7 @@ function SignIn() {
           </div>
 
           {/* Social links  */}
-          <div className='flex flex-row justify-between'>
+          <div className='flex flex-row justify-evenly md:justify-evenly'>
             <Button className='border-2 border-borderColor text-tdm font-semibold'> <img src="/google-logo.svg" alt="google logo" className='pr-2' /> Google</Button>
             <Button className='border-2 border-borderColor text-tdm font-semibold'> <img src="/fb-logo.svg" alt="facebook logo" className='pr-2' />Facebook</Button>
           </div>

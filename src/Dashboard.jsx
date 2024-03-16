@@ -9,18 +9,18 @@ import { Link } from "react-router-dom";
 function Dashboard() {
 
     return (
-        <div className="dashboard flex flex-row justify-center max-w-[1440px] m-auto">
+        <div className="dashboard  flex flex-row justify-center  m-auto  container max-w-[100rem]">
             {/* Left side  */}
-            <div className="left w-1/4 border-r-2 border-r-borderColor">
+            <div className="left w-[20%] mx-2 border-r-2 border-r-borderColor container">
                 {/* section one  */}
-                <div className="flex flex-row py-6 px-4">
-                    <div className="w-6 pt-2">
+                <div className="flex flex-row py-6 px-4 justify-around">
+                    <div className="w-14">
                         <img src="/audease_logo.png" alt="audease logo" />
                     </div>
                     <div>
-                        <Link to="/"> <h2 className="font-semibold text-xl px-2">Eden College</h2> </Link>
+                        <Link to="/"> <h2 className="font-semibold text-bigTextb ">Eden College</h2> </Link>
                     </div>
-                    <div className="w-6 pt-1">
+                    <div className="w-6">
                         <img src="/arrow.svg" alt="" />
                     </div>
                 </div>
@@ -106,18 +106,20 @@ function Dashboard() {
                     </div>
                 </div>
                 {/* section four  */}
-                <div className="p-4 flex flex-row justify-left items-center">
-                    <div className="relative h-64 w-64 bg-cardbg rounded-lg">
-                        <div className='flex flex-col text-center justify-center pt-16 px-8'>
+                <div className="p-2">
+                    <div className="relative flex flex-row bg-[url('/Union.svg')] bg-no-repeat h-[250px] w-full">
+                        <div className="text-center w-[200px] mt-16">
                             <h3 className="text-breaksm font-medium">Thoughts Time</h3>
-                            <p className="text-tem font-normal text-iconColor py-4">We don’t have any notice for you, till then you can share your thoughts with your peers.</p>
-                            <input type="text" className="bg-white rounded p-2 text-center text-breaksm font-medium text-textBlack placeholder-text-textBlack" placeholder="Write a message" />
+                            <p className="text-tem font-normal text-iconColor p-4">We don’t have any notice for you, till then you can share your thoughts with your peers.</p>
+                            <input type="text" className="bg-white w-4/5 rounded p-2 text-center text-breaksm font-medium text-textBlack placeholder-text-textBlack" placeholder="Write a message" />
                         </div>
-                        <div className="absolute flex items-center justify-center h-24 w-24 left-20 -top-8 bg-cardbg rounded-full flex-row">
-                            <img src="/lamp-on.png" alt="Image" className="w-1/2 h-1/2 object-cover -top-10" />
-                        </div>
-                        <div className="absolute flex items-center justify-center h-24 w-24 left-20 -top-8 bg-cardbg rounded-full flex-row">
-                            <img src="/ellipse.png" alt="Image" className="w-3/4 h-1/2 object-cover" />
+                        <div className="absolute flex items-center justify-center h-16 w-16 left-[70px]  flex-row">
+                            {/* <img src="/lamp-on.png" alt="Image" className="w-1/2 h-1/2" /> */}
+                            <div>
+                                <img src="/ellipse.png" alt="Background Image" className="absolute inset-0 w-full h-full object-cover" />
+                                <img src="/lamp-on.png" alt="Foreground Image" className="absolute inset-0 left-[15px] top-[20px] object-cover w-1/2 h-1/2" />
+                            </div>
+
                         </div>
                     </div>
 
@@ -125,7 +127,7 @@ function Dashboard() {
             </div>
 
             {/* Right side  */}
-            <div className="right w-3/4">
+            <div className="right w-[80%] ">
                 {/* First section  */}
                 <div className="flex flex-row justify-between mx-12 my-4">
                     {/* Search bar */}
@@ -201,10 +203,10 @@ function Dashboard() {
                         {/* Avatars  */}
                         <div>
                             <Avatar.Group>
-                                <Avatar img="/kachi.png" rounded stacked />
-                                <Avatar img="/kachi.png" rounded stacked />
-                                <Avatar img="/kachi.png" rounded stacked />
-                                <Avatar img="/kachi.png" rounded stacked />
+                                <Avatar img="/kachi.png" rounded />
+                                <Avatar img="/kachi.png" rounded />
+                                <Avatar img="/kachi.png" rounded />
+                                <Avatar img="/kachi.png" rounded />
                                 <Avatar.Counter total={2} href="#" className='bg-avatarBg text-avatarBgDeep' />
                             </Avatar.Group>
                         </div>
@@ -251,9 +253,9 @@ function Dashboard() {
                 </div>
 
                 {/* Fourth section - cards  */}
-                <div className='flex flex-row justify-between mx-12 my-8 space-x-4'>
+                <div className='flex flex-row  my-12 mx-auto justify-center space-x-4 w-full'>
                     {/* Big Card 1  */}
-                    <div className='bg-cardbg w-96 rounded-2xl p-4'>
+                    <div className='bg-cardbg w-[30%] rounded-2xl p-4'>
                         {/* to do  */}
                         <div className='flex flex-row space-x-4'>
                             <li className="py-2 mb-2 flex items-center font-medium text-iconText">
@@ -265,7 +267,7 @@ function Dashboard() {
                         {/* line break  */}
                         <hr className="text-cardBulletBlue h-8" />
                         {/* Small cards    1 */}
-                        <div className='grid space-y-4'>
+                        <div className='grid space-y-8'>
                             <Card href="#" className=" bg-bg-white border-none">
                                 {/* first div  */}
                                 <div className='flex flex-row justify-between'>
@@ -282,13 +284,72 @@ function Dashboard() {
                                     <p className='font-normal text-tem text-iconColor'>Brainstorming brings team members diverse experience into play. </p>
                                 </div>
                                 {/* Third div */}
-                                <div></div>
+                                <div className='flex flex-row justify-between'>
+                                    {/* avatar  */}
+                                    <div>
+                                        <Avatar.Group className='gap-2'>
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                        </Avatar.Group>
+                                    </div>
+                                    <div className='flex flex-row space-x-2 py-2'>
+                                        <div className='flex flex-row space-x-1 text-iconColor'>
+                                            <img src="/comments.png" alt="" className='w-[12px] h-[12px]' />
+                                            <p className='text-tem'>12 comments</p>
+                                        </div>
+                                        <div className='flex flex-row space-x-1 text-iconColor'>
+                                            <img src="/files.png" alt="" className='w-[12px] h-[12px]' />
+                                            <p className='text-tem'>0 files</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </Card>
+                            {/* Small cards    2 */}
+                            <div className='border-dotted border-2 border-cardBulletBlue rounded-lg'>
+                                <Card href="#" className=" bg-bg-white border-none origin-center rotate-2">
+                                    {/* first div  */}
+                                    <div className='flex flex-row justify-between'>
+                                        <div className='w-9 h-6 bg-hightPriorityLight rounded-2xl'>
+                                            <p className='text-tem text-hightPriorityDark font-medium text-center py-1 '>High</p>
+                                        </div>
+                                        <div>
+                                            <p className='font-extrBold text-iconText text-textBlue'>...</p>
+                                        </div>
+                                    </div>
+                                    {/* Second div  */}
+                                    <div>
+                                        <h5 className='font-semibold text-bigTextb text-textBlue py-1'>Research</h5>
+                                        <p className='font-normal text-tem text-iconColor'>User research helps you to create an optimal product for users. </p>
+                                    </div>
+                                    {/* Third div */}
+                                    <div className='flex flex-row justify-between'>
+                                        {/* avatar  */}
+                                        <div>
+                                            <Avatar.Group className='gap-2'>
+                                                <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                                <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                            </Avatar.Group>
+                                        </div>
+                                        <div className='flex flex-row space-x-2 py-2'>
+                                            <div className='flex flex-row space-x-1 text-iconColor'>
+                                                <img src="/comments.png" alt="" className='w-[12px] h-[12px]' />
+                                                <p className='text-tem'>10 comments</p>
+                                            </div>
+                                            <div className='flex flex-row space-x-1 text-iconColor'>
+                                                <img src="/files.png" alt="" className='w-[12px] h-[12px]' />
+                                                <p className='text-tem'>3 files</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Card>
+                            </div>
+                            {/* Small cards    3 */}
                             <Card href="#" className=" bg-bg-white border-none">
                                 {/* first div  */}
                                 <div className='flex flex-row justify-between'>
-                                    <div className='w-9 h-6 bg-priorityBgColor rounded-2xl'>
-                                        <p className='text-tem text-priorityTextColor font-medium text-center py-1 '>Low</p>
+                                    <div className='w-9 h-6 bg-hightPriorityLight rounded-2xl'>
+                                        <p className='text-tem text-hightPriorityDark font-medium text-center py-1 '>High</p>
                                     </div>
                                     <div>
                                         <p className='font-extrBold text-iconText text-textBlue'>...</p>
@@ -296,36 +357,35 @@ function Dashboard() {
                                 </div>
                                 {/* Second div  */}
                                 <div>
-                                    <h5 className='font-semibold text-bigTextb text-textBlue py-1'>Brainstorming</h5>
-                                    <p className='font-normal text-tem text-iconColor'>Brainstorming brings team members diverse experience into play. </p>
+                                    <h5 className='font-semibold text-bigTextb text-textBlue py-1'>Wireframes</h5>
+                                    <p className='font-normal text-tem text-iconColor'>Low fidelity wireframes include the most basic content and visuals. </p>
                                 </div>
                                 {/* Third div */}
-                                <div></div>
-                            </Card>
-                            <Card href="#" className=" bg-bg-white border-none">
-                                {/* first div  */}
                                 <div className='flex flex-row justify-between'>
-                                    <div className='w-9 h-6 bg-priorityBgColor rounded-2xl'>
-                                        <p className='text-tem text-priorityTextColor font-medium text-center py-1 '>Low</p>
-                                    </div>
+                                    {/* avatar  */}
                                     <div>
-                                        <p className='font-extrBold text-iconText text-textBlue'>...</p>
+                                        <Avatar.Group className='gap-2'>
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                        </Avatar.Group>
+                                    </div>
+                                    <div className='flex flex-row space-x-2 py-2'>
+                                        <div className='flex flex-row space-x-1 text-iconColor'>
+                                            <img src="/comments.png" alt="" className='w-[12px] h-[12px]' />
+                                            <p className='text-tem'>2 comments</p>
+                                        </div>
+                                        <div className='flex flex-row space-x-1 text-iconColor'>
+                                            <img src="/files.png" alt="" className='w-[12px] h-[12px]' />
+                                            <p className='text-tem'>0 files</p>
+                                        </div>
                                     </div>
                                 </div>
-                                {/* Second div  */}
-                                <div>
-                                    <h5 className='font-semibold text-bigTextb text-textBlue py-1'>Brainstorming</h5>
-                                    <p className='font-normal text-tem text-iconColor'>Brainstorming brings team members diverse experience into play. </p>
-                                </div>
-                                {/* Third div */}
-                                <div></div>
                             </Card>
-                            <div></div>
-                            <div></div>
                         </div>
                     </div>
                     {/* Big Card 2  */}
-                    <div className='bg-cardbg w-96 rounded-2xl p-4'>
+                    <div className='bg-cardbg w-[30%] rounded-2xl p-4'>
                         {/* to do  */}
                         <div className='flex flex-row space-x-4'>
                             <li className="py-2 mb-2 flex items-center font-medium text-iconText">
@@ -337,7 +397,8 @@ function Dashboard() {
                         {/* line break  */}
                         <hr className="text-bulletYellow h-8" />
                         {/* Small cards */}
-                        <div>
+                        <div className='space-y-8'>
+                            {/* Small cards 1*/}
                             <Card href="#" className=" bg-bg-white border-none">
                                 {/* first div  */}
                                 <div className='flex flex-row justify-between'>
@@ -350,18 +411,75 @@ function Dashboard() {
                                 </div>
                                 {/* Second div  */}
                                 <div>
-                                    <h5 className='font-semibold text-bigTextb text-textBlue py-1'>Brainstorming</h5>
-                                    <p className='font-normal text-tem text-iconColor'>Brainstorming brings team members diverse experience into play. </p>
+                                    <h5 className='font-semibold text-bigTextb text-textBlue py-1'>Onboarding Illustrations</h5>
+                                    <img src="/card-image1.png" alt="" className='py-4' />
                                 </div>
                                 {/* Third div */}
-                                <div></div>
+                                <div className='flex flex-row justify-between'>
+                                    {/* avatar  */}
+                                    <div>
+                                        <Avatar.Group className='gap-2'>
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                        </Avatar.Group>
+                                    </div>
+                                    <div className='flex flex-row space-x-2 py-2'>
+                                        <div className='flex flex-row space-x-1 text-iconColor'>
+                                            <img src="/comments.png" alt="" className='w-[12px] h-[12px]' />
+                                            <p className='text-tem'>14 comments</p>
+                                        </div>
+                                        <div className='flex flex-row space-x-1 text-iconColor'>
+                                            <img src="/files.png" alt="" className='w-[12px] h-[12px]' />
+                                            <p className='text-tem'>5 files</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </Card>
-                            <div></div>
-                            <div></div>
+                            {/* Small cards 2*/}
+                            <Card href="#" className=" bg-bg-white border-none">
+                                {/* first div  */}
+                                <div className='flex flex-row justify-between'>
+                                    <div className='w-9 h-6 bg-priorityBgColor rounded-2xl'>
+                                        <p className='text-tem text-priorityTextColor font-medium text-center py-1 '>Low</p>
+                                    </div>
+                                    <div>
+                                        <p className='font-extrBold text-iconText text-textBlue'>...</p>
+                                    </div>
+                                </div>
+                                {/* Second div  */}
+                                <div>
+                                    <h5 className='font-semibold text-bigTextb text-textBlue py-1'>Moodboard</h5>
+                                    <div className='flex flex-row space-x-4 overflow-hidden'>
+                                        <img src="/card-image2.png" alt="" className='py-4 max-h-full w-1/2' />
+                                        <img src="/card-image3.png" alt="" className='py-4 max-h-full w-1/2' />
+                                    </div>
+                                </div>
+                                {/* Third div */}
+                                <div className='flex flex-row justify-between'>
+                                    {/* avatar  */}
+                                    <div>
+                                        <Avatar.Group className='gap-2'>
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                            
+                                        </Avatar.Group>
+                                    </div>
+                                    <div className='flex flex-row space-x-2 py-2'>
+                                        <div className='flex flex-row space-x-1 text-iconColor'>
+                                            <img src="/comments.png" alt="" className='w-[12px] h-[12px]' />
+                                            <p className='text-tem'>9 comments</p>
+                                        </div>
+                                        <div className='flex flex-row space-x-1 text-iconColor'>
+                                            <img src="/files.png" alt="" className='w-[12px] h-[12px]' />
+                                            <p className='text-tem'>10 files</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Card>
                         </div>
                     </div>
                     {/* Big card 3  */}
-                    <div className='bg-cardbg w-96 rounded-2xl p-4'>
+                    <div className='bg-cardbg w-[30%] rounded-2xl p-4'>
                         {/* to do  */}
                         <div className='flex flex-row space-x-4'>
                             <li className="py-2 mb-2 flex items-center font-medium text-iconText">
@@ -373,12 +491,13 @@ function Dashboard() {
                         {/* line break  */}
                         <hr className="text-cardBulletGreen h-8" />
                         {/* Small cards */}
-                        <div>
+                        <div className='space-y-8'>
+                            {/* Small cards 1*/}
                             <Card href="#" className=" bg-bg-white border-none">
                                 {/* first div  */}
                                 <div className='flex flex-row justify-between'>
-                                    <div className='w-9 h-6 bg-priorityBgColor rounded-2xl'>
-                                        <p className='text-tem text-priorityTextColor font-medium text-center py-1 '>Low</p>
+                                    <div className='px-2 h-6 bg-completedLight rounded-2xl'>
+                                        <p className='text-tem text-completedDark font-medium text-center py-1 '>Completed</p>
                                     </div>
                                     <div>
                                         <p className='font-extrBold text-iconText text-textBlue'>...</p>
@@ -386,11 +505,69 @@ function Dashboard() {
                                 </div>
                                 {/* Second div  */}
                                 <div>
-                                    <h5 className='font-semibold text-bigTextb text-textBlue py-1'>Brainstorming</h5>
-                                    <p className='font-normal text-tem text-iconColor'>Brainstorming brings team members diverse experience into play. </p>
+                                    <h5 className='font-semibold text-bigTextb text-textBlue py-1'>Mobile App Design</h5>
+                                    <img src="/card-image4.png" alt="" className='py-4' />
                                 </div>
                                 {/* Third div */}
-                                <div></div>
+                                <div className='flex flex-row justify-between'>
+                                    {/* avatar  */}
+                                    <div>
+                                        <Avatar.Group className='gap-2'>
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                           
+                                        </Avatar.Group>
+                                    </div>
+                                    <div className='flex flex-row space-x-2 py-2'>
+                                        <div className='flex flex-row space-x-1 text-iconColor'>
+                                            <img src="/comments.png" alt="" className='w-[12px] h-[12px]' />
+                                            <p className='text-tem'>12 comments</p>
+                                        </div>
+                                        <div className='flex flex-row space-x-1 text-iconColor'>
+                                            <img src="/files.png" alt="" className='w-[12px] h-[12px]' />
+                                            <p className='text-tem'>15 files</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Card>
+                            {/* Small cards 2*/}
+                            <Card href="#" className=" bg-bg-white border-none">
+                                {/* first div  */}
+                                <div className='flex flex-row justify-between'>
+                                    <div className='px-2 h-6 bg-completedLight rounded-2xl'>
+                                        <p className='text-tem text-completedDark font-medium text-center py-1 '>Completed</p>
+                                    </div>
+                                    <div>
+                                        <p className='font-extrBold text-iconText text-textBlue'>...</p>
+                                    </div>
+                                </div>
+                                {/* Second div  */}
+                                <div>
+                                    <h5 className='font-semibold text-bigTextb text-textBlue py-1'>Mobile App Design</h5>
+                                    <p className='font-normal text-tem text-iconColor'>It just needs to adapt the UI from what you did before </p>
+                                </div>
+                                {/* Third div */}
+                                <div className='flex flex-row justify-between'>
+                                    {/* avatar  */}
+                                    <div>
+                                        <Avatar.Group className='gap-2'>
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                           
+                                        </Avatar.Group>
+                                    </div>
+                                    <div className='flex flex-row space-x-2 py-2'>
+                                        <div className='flex flex-row space-x-1 text-iconColor'>
+                                            <img src="/comments.png" alt="" className='w-[12px] h-[12px]' />
+                                            <p className='text-tem'>12 comments</p>
+                                        </div>
+                                        <div className='flex flex-row space-x-1 text-iconColor'>
+                                            <img src="/files.png" alt="" className='w-[12px] h-[12px]' />
+                                            <p className='text-tem'>15 files</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </Card>
                             <div></div>
                             <div></div>

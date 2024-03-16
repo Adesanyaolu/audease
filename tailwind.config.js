@@ -58,6 +58,10 @@ export default {
       'priorityTextColor': '#D58D49',
       'priorityBgColor': '#DFA87433',
       'textBlack': '#000000',
+      'hightPriorityDark':'hsla(354, 57%, 65%, 1)',
+      'hightPriorityLight':'hsla(354, 57%, 65%, 0.1)',
+      'completedLight':'rgba(131, 194, 157, 0.2)',
+      'completedDark':'rgba(104, 178, 102, 1)'
     },
   },
   plugins: ['flowbite/plugin'],

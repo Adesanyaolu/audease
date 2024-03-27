@@ -26,7 +26,7 @@ export default {
       tsmall: ['0.75rem', '1.5rem'],
       tdm: ['0.688rem', '0.908rem'],
       tem: ['0.75rem', '0.908rem'],
-      breaksm: ['0.875rem','1.155rem'],
+      breaksm: ['0.875rem','1.2rem'],
       iconText: ['1rem', '1.313rem'],
       bigTexta: ['2.875rem', '3.479rem'],
       bigTextb: ['1.125rem', '1.361rem']

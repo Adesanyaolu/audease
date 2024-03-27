@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function Dashboard() {
 
     return (
-        <div className="dashboard  flex flex-row justify-center m-auto max-w-[1440px]">
+        <div className="dashboard  flex flex-row justify-center m-auto max-w-[1500px]">
             {/* Left side  */}
             <div className="left w-[17%] border-r-2 border-r-borderColor container">
                 {/* section one  */}
@@ -126,7 +126,7 @@ function Dashboard() {
             </div>
 
             {/* Right side  */}
-            <div className="right w-[65%] ">
+            <div className="right w-[80%] ">
                 {/* First section  */}
                 <div className="flex flex-row justify-between mx-12 my-4">
                     {/* Search bar */}
@@ -252,9 +252,9 @@ function Dashboard() {
                 </div>
 
                 {/* Fourth section - cards  */}
-                <div className='flex flex-row  my-12 mx-10 justify-center gap-12 '>
+                <div className='flex flex-row  my-12 mx-10 gap-[6rem]'>
                     {/* Big Card 1  */}
-                    <div className='bg-cardbg w-[25rem] rounded-2xl p-4'>
+                    <div className='bg-cardbg w-[30rem] rounded-2xl p-4'>
                         {/* to do  */}
                         <div className='flex flex-row space-x-4'>
                             <li className="py-2 mb-2 flex items-center font-medium text-iconText">
@@ -280,26 +280,26 @@ function Dashboard() {
                                 {/* Second div  */}
                                 <div>
                                     <h5 className='font-semibold text-bigTextb text-textBlue py-1'>Brainstorming</h5>
-                                    <p className='font-normal text-tem text-iconColor'>Brainstorming brings team members diverse experience into play. </p>
+                                    <p className='font-normal text-breaksm text-iconColor'>Brainstorming brings team members diverse experience into play. </p>
                                 </div>
                                 {/* Third div */}
                                 <div className='flex flex-row justify-between'>
                                     {/* avatar  */}
                                     <div>
                                         <Avatar.Group className='gap-2'>
-                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
-                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
-                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='sm' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='sm' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='sm' />
                                         </Avatar.Group>
                                     </div>
                                     <div className='flex flex-row space-x-2 py-2'>
                                         <div className='flex flex-row space-x-1 text-iconColor'>
-                                            <img src="/comments.png" alt="" className='w-[12px] h-[12px]' />
-                                            <p className='text-tem'>12 comments</p>
+                                            <img src="/comments.png" alt="" className='w-[14px] h-[14px]' />
+                                            <p className='text-breaksm py-1'>12 comments</p>
                                         </div>
                                         <div className='flex flex-row space-x-1 text-iconColor'>
-                                            <img src="/files.png" alt="" className='w-[12px] h-[12px]' />
-                                            <p className='text-tem'>0 files</p>
+                                            <img src="/files.png" alt="" className='w-[14px] h-[14px]' />
+                                            <p className='text-breaksm py-1'>0 files</p>
                                         </div>
                                     </div>
                                 </div>
@@ -319,25 +319,25 @@ function Dashboard() {
                                     {/* Second div  */}
                                     <div>
                                         <h5 className='font-semibold text-bigTextb text-textBlue py-1'>Research</h5>
-                                        <p className='font-normal text-tem text-iconColor'>User research helps you to create an optimal product for users. </p>
+                                        <p className='font-normal text-breaksm text-iconColor'>User research helps you to create an optimal product for users. </p>
                                     </div>
                                     {/* Third div */}
                                     <div className='flex flex-row justify-between'>
                                         {/* avatar  */}
                                         <div>
                                             <Avatar.Group className='gap-2'>
-                                                <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
-                                                <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                                <Avatar img="/kachi.png" alt="avatar of User" rounded size='sm' />
+                                                <Avatar img="/kachi.png" alt="avatar of User" rounded size='sm' />
                                             </Avatar.Group>
                                         </div>
                                         <div className='flex flex-row space-x-2 py-2'>
                                             <div className='flex flex-row space-x-1 text-iconColor'>
-                                                <img src="/comments.png" alt="" className='w-[12px] h-[12px]' />
-                                                <p className='text-tem'>10 comments</p>
+                                                <img src="/comments.png" alt="" className='w-[14px] h-[14px]' />
+                                                <p className='text-breaksm py-1'>10 comments</p>
                                             </div>
                                             <div className='flex flex-row space-x-1 text-iconColor'>
-                                                <img src="/files.png" alt="" className='w-[12px] h-[12px]' />
-                                                <p className='text-tem'>3 files</p>
+                                                <img src="/files.png" alt="" className='w-[14px] h-[14px]' />
+                                                <p className='text-breaksm py-1'>3 files</p>
                                             </div>
                                         </div>
                                     </div>
@@ -357,26 +357,26 @@ function Dashboard() {
                                 {/* Second div  */}
                                 <div>
                                     <h5 className='font-semibold text-bigTextb text-textBlue py-1'>Wireframes</h5>
-                                    <p className='font-normal text-tem text-iconColor'>Low fidelity wireframes include the most basic content and visuals. </p>
+                                    <p className='font-normal text-breaksm text-iconColor'>Low fidelity wireframes include the most basic content and visuals. </p>
                                 </div>
                                 {/* Third div */}
                                 <div className='flex flex-row justify-between'>
                                     {/* avatar  */}
                                     <div>
                                         <Avatar.Group className='gap-2'>
-                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
-                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
-                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='sm' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='sm' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='sm' />
                                         </Avatar.Group>
                                     </div>
                                     <div className='flex flex-row space-x-2 py-2'>
                                         <div className='flex flex-row space-x-1 text-iconColor'>
-                                            <img src="/comments.png" alt="" className='w-[12px] h-[12px]' />
-                                            <p className='text-tem'>2 comments</p>
+                                            <img src="/comments.png" alt="" className='w-[14px] h-[14px]' />
+                                            <p className='text-breaksm py-1'>2 comments</p>
                                         </div>
                                         <div className='flex flex-row space-x-1 text-iconColor'>
-                                            <img src="/files.png" alt="" className='w-[12px] h-[12px]' />
-                                            <p className='text-tem'>0 files</p>
+                                            <img src="/files.png" alt="" className='w-[14px] h-[14px]' />
+                                            <p className='text-breaksm py-1'>0 files</p>
                                         </div>
                                     </div>
                                 </div>
@@ -384,7 +384,7 @@ function Dashboard() {
                         </div>
                     </div>
                     {/* Big Card 2  */}
-                    <div className='bg-cardbg w-[25rem] rounded-2xl p-4'>
+                    <div className='bg-cardbg w-[30rem] rounded-2xl p-4'>
                         {/* to do  */}
                         <div className='flex flex-row space-x-4'>
                             <li className="py-2 mb-2 flex items-center font-medium text-iconText">
@@ -418,19 +418,19 @@ function Dashboard() {
                                     {/* avatar  */}
                                     <div>
                                         <Avatar.Group className='gap-2'>
-                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
-                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
-                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='sm' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='sm' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='sm' />
                                         </Avatar.Group>
                                     </div>
                                     <div className='flex flex-row space-x-2 py-2'>
                                         <div className='flex flex-row space-x-1 text-iconColor'>
-                                            <img src="/comments.png" alt="" className='w-[12px] h-[12px]' />
-                                            <p className='text-tem'>14 comments</p>
+                                            <img src="/comments.png" alt="" className='w-[14px] h-[14px]' />
+                                            <p className='text-breaksm'>14 comments</p>
                                         </div>
                                         <div className='flex flex-row space-x-1 text-iconColor'>
-                                            <img src="/files.png" alt="" className='w-[12px] h-[12px]' />
-                                            <p className='text-tem'>5 files</p>
+                                            <img src="/files.png" alt="" className='w-[14px] h-[14px]' />
+                                            <p className='text-breaksm'>5 files</p>
                                         </div>
                                     </div>
                                 </div>
@@ -459,18 +459,18 @@ function Dashboard() {
                                     {/* avatar  */}
                                     <div>
                                         <Avatar.Group className='gap-2'>
-                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='sm' />
 
                                         </Avatar.Group>
                                     </div>
                                     <div className='flex flex-row space-x-2 py-2'>
                                         <div className='flex flex-row space-x-1 text-iconColor'>
-                                            <img src="/comments.png" alt="" className='w-[12px] h-[12px]' />
-                                            <p className='text-tem'>9 comments</p>
+                                            <img src="/comments.png" alt="" className='w-[14px] h-[14px]' />
+                                            <p className='text-breaksm'>9 comments</p>
                                         </div>
                                         <div className='flex flex-row space-x-1 text-iconColor'>
-                                            <img src="/files.png" alt="" className='w-[12px] h-[12px]' />
-                                            <p className='text-tem'>10 files</p>
+                                            <img src="/files.png" alt="" className='w-[14px] h-[14px]' />
+                                            <p className='text-breaksm'>10 files</p>
                                         </div>
                                     </div>
                                 </div>
@@ -478,7 +478,7 @@ function Dashboard() {
                         </div>
                     </div>
                     {/* Big card 3  */}
-                    <div className='bg-cardbg w-[25rem] rounded-2xl p-4'>
+                    <div className='bg-cardbg w-[30rem] rounded-2xl p-4'>
                         {/* to do  */}
                         <div className='flex flex-row space-x-4'>
                             <li className="py-2 mb-2 flex items-center font-medium text-iconText">
@@ -512,19 +512,19 @@ function Dashboard() {
                                     {/* avatar  */}
                                     <div>
                                         <Avatar.Group className='gap-2'>
-                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
-                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='sm' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='sm' />
 
                                         </Avatar.Group>
                                     </div>
                                     <div className='flex flex-row space-x-2 py-2'>
                                         <div className='flex flex-row space-x-1 text-iconColor'>
-                                            <img src="/comments.png" alt="" className='w-[12px] h-[12px]' />
-                                            <p className='text-tem'>12 comments</p>
+                                            <img src="/comments.png" alt="" className='w-[14px] h-[14px]' />
+                                            <p className='text-breaksm'>12 comments</p>
                                         </div>
                                         <div className='flex flex-row space-x-1 text-iconColor'>
-                                            <img src="/files.png" alt="" className='w-[12px] h-[12px]' />
-                                            <p className='text-tem'>15 files</p>
+                                            <img src="/files.png" alt="" className='w-[14px] h-[14px]' />
+                                            <p className='text-breaksm'>15 files</p>
                                         </div>
                                     </div>
                                 </div>
@@ -543,27 +543,27 @@ function Dashboard() {
                                 {/* Second div  */}
                                 <div>
                                     <h5 className='font-semibold text-bigTextb text-textBlue py-1'>Mobile App Design</h5>
-                                    <p className='font-normal text-tem text-iconColor'>It just needs to adapt the UI from what you did before </p>
+                                    <p className='font-normal text-breaksm text-iconColor'>It just needs to adapt the UI from what you did before </p>
                                 </div>
                                 {/* Third div */}
                                 <div className='flex flex-row justify-between'>
                                     {/* avatar  */}
                                     <div>
                                         <Avatar.Group className='gap-2'>
-                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
-                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
-                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='xs' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='sm' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='sm' />
+                                            <Avatar img="/kachi.png" alt="avatar of User" rounded size='sm' />
 
                                         </Avatar.Group>
                                     </div>
                                     <div className='flex flex-row space-x-2 py-2'>
                                         <div className='flex flex-row space-x-1 text-iconColor'>
-                                            <img src="/comments.png" alt="" className='w-[12px] h-[12px]' />
-                                            <p className='text-tem'>12 comments</p>
+                                            <img src="/comments.png" alt="" className='w-[14px] h-[14px]' />
+                                            <p className='text-breaksm'>12 comments</p>
                                         </div>
                                         <div className='flex flex-row space-x-1 text-iconColor'>
-                                            <img src="/files.png" alt="" className='w-[12px] h-[12px]' />
-                                            <p className='text-tem'>15 files</p>
+                                            <img src="/files.png" alt="" className='w-[14px] h-[14px]' />
+                                            <p className='text-breaksm'>15 files</p>
                                         </div>
                                     </div>
                                 </div>
